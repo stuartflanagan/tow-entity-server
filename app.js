@@ -9,7 +9,7 @@ var mongo = require('mongoskin');
 
 var sys = require('sys')
 var exec = require('child_process').exec;
-var death = require('death')({debug: true});
+
 function puts(error, stdout, stderr) { sys.puts(stdout) }
 
 var db = mongo.db("mongodb://localhost:27017/api", {native_parser:true});

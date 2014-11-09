@@ -19,8 +19,5 @@
     "mongoskin": "*",
     "morgan": "~1.0.0",
     "serve-favicon": "*"
-  },
-  "devDependencies": {
-    "death": "^0.1.0"
   }
 }
