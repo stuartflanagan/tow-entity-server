@@ -7,14 +7,16 @@ var bodyParser = require('body-parser');
 // Database
 var mongo = require('mongoskin');
 
-var sys = require('sys')
-var exec = require('child_process').exec;
-
-function puts(error, stdout, stderr) { sys.puts(stdout) }
-
+// TODO allow connection details from parameters / args
 var db = mongo.db("mongodb://localhost:27017/api", {native_parser:true});
 
-exec("mongoimport --db api --file "+__dirname+"/db/entity.json --jsonArray", puts);
+var sys = require('sys');
+var exec = require('child_process').exec;
+function puts(error, stdout, stderr) { sys.puts(stdout) }
+
+// TODO Add argument to allow import from command line
+//db.collection('entity').drop();
+//exec("mongoimport --db api --file "+__dirname+"/db/entity.json 
 
 var entity = require('./routes/entity');
 
