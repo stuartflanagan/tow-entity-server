@@ -1,0 +1,26 @@
+{
+  "name": "tow-entity-server",
+  "version": "0.0.1",
+  "private": true,
+  "config": {
+    "port": 3030
+  },
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "express": "~4.0.0",
+    "jade": "*",
+    "lodash": "^2.4.1",
+    "mongodb": "*",
+    "mongoskin": "*",
+    "morgan": "~1.0.0",
+    "serve-favicon": "*"
+  },
+  "devDependencies": {
+    "death": "^0.1.0"
+  }
+}
